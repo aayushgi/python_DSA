@@ -1,12 +1,16 @@
 #check the number is palindrome or not
-num=int(input("enter a number want to check palindrome: "))
-n=num
+"""
+palendrome number vo hote hai jinko kisi bhi side se padhne per vo same value return karte hai like 121,333
+"""
+n=int(input("enter the number here: "))
+num=n
 result=0
-while n>0:
-    last_digit=n%10
+while(num>0):
+    last_digit=num%10
     result=(result*10)+last_digit
-    n=n//10
-if num==result:
-    print("number is palindrome")
+    num=num//10
+
+if(n==result):
+    print("number iss palendrome") 
 else:
-    print("number is not a palindrome")
+    print("number is not a palendrome")
