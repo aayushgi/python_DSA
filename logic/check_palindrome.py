@@ -14,3 +14,9 @@ if(n==result):
     print("number iss palendrome") 
 else:
     print("number is not a palendrome")
+
+"""
+TC=0(lodb10(N))
+N=numer of itteration 10
+SC=o(1)
+"""
