@@ -1,0 +1,3 @@
+num=[1,5,3,1,4,9,5,1]
+freq_map=dict()/{}
+check karna hai perticular num dictronar me exist karta hai ya nahi 
