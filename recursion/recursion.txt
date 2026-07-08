@@ -1,1 +1,2 @@
 when fuction call it self called recursion
+.python would call the same function for 087 times 
