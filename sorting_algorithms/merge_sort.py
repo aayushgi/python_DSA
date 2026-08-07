@@ -50,8 +50,6 @@ Note: Merge Sort me hamesha while use karte hain.
 
 """
 #this is for murge of two sorted arrays
-left=[1,2,3,4]
-right=[1,1,3,4,5,6,7]
 def merge(left,right):
     result=[]
     i,j=0,0
@@ -71,4 +69,14 @@ def merge(left,right):
         result.append(right[j])
         j=j+1
     return(result)
-print("here is the murged sorted array",merge(left,right))
+def merge_sort(arr):
+    if len(arr)<=1:
+        return arr
+    mid=len(arr)//2
+    left=merge_sort(arr[:mid])
+    right=merge_sort(arr[mid:])
+    return merge(left,right)
+
+nums=[8,3,5,1,1,5,3,5,9,67,3,46,89]
+print("Original array:", nums)
+print("Sorted array:", merge_sort(nums))
